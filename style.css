@@ -18,7 +18,7 @@ html, body {
     background-color: #122D50;
     display: flex;
     flex-wrap: wrap;
-    font-size: 5vh;
+    font-size: 32px;
 }
 
 #scoreBoard {
