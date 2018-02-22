@@ -29,6 +29,13 @@
           <p>Since Columbine, 4/20/1999</p>
           <p>Source: https://en.wikipedia.org/wiki/List_of_school_massacres_by_death_toll</p>
           <p>In cases where the exact count is unknown, the lower estimate is used.</p>
+          <p>Other countries: 
+{% assign sorted = (site.countries | sort: 'title') %}
+
+{% for country in sorted %}
+            <a href="{{country.url}}">{{country.title}}</a>
+{% endfor %}
+        </p>
       </div>
   </body>
   <script>
