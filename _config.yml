@@ -1,0 +1,7 @@
+title: School Shooting Scoreboard
+permalink: pretty
+
+collections:
+  countries:
+    output: true
+    permalink: /:title
