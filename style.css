@@ -18,7 +18,7 @@ html, body {
     background-color: #122D50;
     display: flex;
     flex-wrap: wrap;
-    font-size: 32px;
+    font-size: 64px;
 }
 
 #scoreBoard {
@@ -27,6 +27,7 @@ html, body {
     border: 5px solid white;
     margin: auto;
     height: calc(100% - 30px);
+    width: 100%;
 }
 
 .stat {
@@ -66,11 +67,12 @@ html, body {
     margin: 0;
 }
 
-@media screen and (max-width: 915px) {
-    body {font-size: 4vh;}
+@media screen and (max-width: 1735px) {
+    body {font-size: 48px;}
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 835px) {
+    body {font-size: 36px;}
     #shootings {order: 2;width:100%;}
     #killings {width: 50%;}
     #injuries {width: 50%;}
