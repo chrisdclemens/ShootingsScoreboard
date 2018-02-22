@@ -68,11 +68,11 @@ html, body {
 }
 
 @media screen and (max-width: 1735px) {
-    body {font-size: 48px;}
+    body {font-size: 36px;}
 }
 
 @media screen and (max-width: 835px) {
-    body {font-size: 36px;}
+    body {font-size: 24px;}
     #shootings {order: 2;width:100%;}
     #killings {width: 50%;}
     #injuries {width: 50%;}
