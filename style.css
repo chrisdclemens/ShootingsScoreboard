@@ -1,0 +1,77 @@
+@font-face {
+    font-family: "Digital";
+    src: url("DS-DIGI.TTF");
+}
+@font-face {
+    font-family: "Wendelin";
+    src: url("wendelin.ttf");
+}
+@font-face {
+    font-family: "Titillium";
+    src: url('TitilliumWeb-SemiBold.ttf');
+}
+html, body {
+    margin: 0;
+    padding: 5px;
+    height: 100%;
+    width: calc(100% - 10px);
+    background-color: #122D50;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 5vh;
+}
+
+#scoreBoard {
+    display: flex;
+    flex-wrap: wrap;
+    border: 5px solid white;
+    margin: auto;
+    height: calc(100% - 30px);
+}
+
+.stat {
+    text-align: center;
+    width: 33%;
+}
+
+.number {
+    font-family: "Digital";
+    color: #EC1C25;
+    font-size: 400%;
+}
+.label {
+    font-family: "Wendelin";
+    color: white;
+    font-size: 100%;
+}
+
+#sinceLast {
+    width: 100%;
+}
+#sinceLast .number {
+    font-size: 600%;
+}
+#sinceLast .label {
+    font-size: 200%;
+}
+
+#info {
+    font-family: "Titillium";
+    font-size: 12px;
+    color: white;
+    padding: 10px;
+}
+#info p {
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 915px) {
+    body {font-size: 4vh;}
+}
+
+@media screen and (max-width: 575px) {
+    #shootings {order: 2;width:100%;}
+    #killings {width: 50%;}
+    #injuries {width: 50%;}
+}

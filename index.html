@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Scoreboard</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+  <body>
+      <div id="scoreBoard">
+      <div class="stat" id="sinceLast">
+          <div class="number" id="daysSince"></div>
+          <div class="label">DAYS SINCE LAST SHOOTING</div>
+      </div>
+      <div class="stat" id="killings">
+          <div class="number">163</div>
+          <div class="label">DEATHS</div>
+      </div>
+      <div class="stat" id="shootings">
+          <div class="number">20</div>
+          <div class="label">MASS SHOOTINGS</div>
+      </div>
+      <div class="stat" id="injuries">
+          <div class="number">144</div>
+          <div class="label">INJURIES</div>
+      </div>
+      </div>
+      <div id="info">
+          <p>Since Columbine, 4/20/1999</p>
+          <p>Source: https://en.wikipedia.org/wiki/List_of_school_massacres_by_death_toll</p>
+      </div>
+  </body>
+  <script>
+var d = new Date();
+d.setFullYear(2018, 1, 14);
+var today = new Date();
+
+var one_day = 1000*60*60*24;
+var days_between = "0000" + Math.round((today.getTime() - d.getTime()) / one_day);
+document.getElementById('daysSince').innerHTML = days_between.substr(-4);
+  </script>
+</html>
+
