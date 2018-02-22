@@ -30,6 +30,9 @@ a:hover {
 
 #country_title {
     height: 66px;
+    margin: auto;
+    color: white;
+    font-family: "Titillium";
 }
 
 #scoreBoard {
