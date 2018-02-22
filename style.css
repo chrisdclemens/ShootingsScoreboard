@@ -21,6 +21,13 @@ html, body {
     font-size: 56px;
 }
 
+a {
+    color: white;
+}
+a:hover {
+    color: palegoldenrod;
+}
+
 #scoreBoard {
     display: flex;
     flex-wrap: wrap;
