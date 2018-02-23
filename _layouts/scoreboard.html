@@ -32,9 +32,9 @@
           <p>source: https://en.wikipedia.org/wiki/List_of_school_massacres_by_death_toll</p>
           <p>all countries: {% assign sorted = (site.countries | sort: 'title') %}
 {% for country in sorted %}
-            {% if country.title == page.title %} {{country.title}}
-            {% else %}<a href="{{country.url}}">{{country.title}}</a>{% endif %}
-{% if forloop.last == false %}|{% endif %}{% endfor %}
+            {% if country.title == page.title %} {{country.title}}{% else %}<a href="{{country.url}}">{{country.title}}</a>{% endif %}
+            {% if forloop.last == false %}|{% endif %}
+{% endfor %}
         </p>
       </div>
   </body>
