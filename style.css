@@ -58,6 +58,8 @@ a:hover {
     font-family: "Wendelin";
     color: white;
     font-size: 100%;
+}
+#sinceLast.label {
     padding: 10px;
 }
 
