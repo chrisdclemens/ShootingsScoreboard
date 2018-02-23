@@ -44,7 +44,7 @@ var today = new Date();
 
 var one_day = 1000*60*60*24;
 var days_between = "0000" + Math.round((today.getTime() - d.getTime()) / one_day);
-document.getElementById('daysSince').innerHTML = days_between.substr(Math.min(-4, -days_between.length));
+document.getElementById('daysSince').innerHTML = days_between.substr(Math.min(-4, 4-days_between.length));
     </script>
   </body>
 </html>
