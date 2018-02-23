@@ -27,20 +27,20 @@ a {
 a:hover {
     color: palegoldenrod;
 }
-
+/*
 #country_title {
     height: 66px;
     margin: auto;
     color: white;
     font-family: "Titillium";
 }
-
+*/
 #scoreBoard {
     display: flex;
     flex-wrap: wrap;
     border: 5px solid white;
     margin: auto;
-    height: calc(100% - 96px);
+    height: calc(100% - 30px);
     width: 100%;
 }
 
@@ -84,13 +84,13 @@ a:hover {
 @media screen and (max-width: 1735px) {
     body {font-size: 36px;}
     #country_title {height: 46px;}
-    #scoreboard {height: calc(100% - 76px);}
+/*    #scoreboard {height: calc(100% - 76px);}*/
 }
 
 @media screen and (max-width: 835px) {
     body {font-size: 24px;}
     #country_title {height: 34px;}
-    #scoreboard {height: calc(100% - 64px);}
+/*    #scoreboard {height: calc(100% - 64px);}*/
     #shootings {order: 2;width:100%;}
     #killings {width: 50%;}
     #injuries {width: 50%;}
